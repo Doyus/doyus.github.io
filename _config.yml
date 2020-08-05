@@ -7,11 +7,11 @@ theme: jekyll-theme-cayman
 
 # Site
 title: doyus
-subtitle: ''
-description: ''
+subtitle: '个人分享'
+description: '爬虫，逆向，web, python, linux'
 keywords:
 author: Dong Yupeng
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
