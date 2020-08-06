@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-theme: jekyll-theme-cayman
-=======
+
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
@@ -101,7 +99,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -109,4 +107,3 @@ deploy:
   type: git
   repo: git@github.com:doyus/doyus.github.io.git
   branch: master
->>>>>>> hexo 源文件
