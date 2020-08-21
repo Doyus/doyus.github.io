@@ -12,6 +12,7 @@ menu:
   分类: /categories/||fa fa-folder-open
   留言板: /messageboard/||fa fa-coffee
   友链: /link/||fa fa-link
+  音乐: /music/||fa-fw fas fa-music
   关于: /about/||fa fa-heart
 # menu:
   # Home: / || fas fa-home

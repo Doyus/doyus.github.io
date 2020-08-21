@@ -42,7 +42,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -107,3 +107,12 @@ deploy:
   type: git
   repo: git@github.com:doyus/doyus.github.io.git
   branch: master
+
+aplayer:
+  meting: true
+  asset_inject: false
+  
+aplayerInject:
+  enable: true
+  per_page: true
+
