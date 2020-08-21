@@ -6,7 +6,7 @@
 # Site
 title: doyus
 subtitle: '个人分享'
-description: '爬虫，逆向，WEB, PYTHON, linux'
+description: '爬虫，逆向，WEB, PYTHON, LINUX'
 keywords:
 author: Dong Yupeng
 language: zh-CN
@@ -47,7 +47,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
