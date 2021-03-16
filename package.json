@@ -12,6 +12,9 @@
     "version": "5.0.0"
   },
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-shell": "^0.8.0",
     "hexo": "^5.0.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
