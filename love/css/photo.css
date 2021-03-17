@@ -1,0 +1,79 @@
+*{
+    /*去除边距*/
+    margin:0;
+    padding: 0;
+    /*html性能优化:虚拟dom,如果一个html标签没有设置css样式,就是虚拟的,
+     所以无论设置多少层div都对性能没有影响*/
+}
+
+body{
+    background-color: snow;
+}
+
+h1{
+    color: #2a2b35;
+    padding-top: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+#bighr{
+    margin-top: 50px;
+    margin-bottom: 20cm;
+    width: 22%;
+    margin: 0 auto;
+    border:1.5px solid #b1b4b9;
+}
+
+#longhr{
+    width:86%;
+    margin: 0 auto;
+    border: 0;
+    border:0.55px solid #b1b4b9;
+    margin-bottom: 10px;
+}
+
+
+#phos{
+    position: relative;
+    align-content: center;
+    margin-top: 10px;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+
+.box{
+    padding:  20px 20px 20px 20px;
+    float: left;
+}
+
+.pho{
+    display: inline-block;
+    position: relative;
+}
+
+.box img{ 
+    border: solid transparent;
+    border-radius: 10px;
+    width: 380px;
+}
+
+.img-tip{
+    position: absolute;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+    bottom: 2px;
+    width: 100%;
+    text-align: center; 
+    background: #000;
+    color: #fff;
+    opacity: 0.55;
+    display: none;
+}
+
+.pho:hover .img-tip {
+    display: block;
+}  
