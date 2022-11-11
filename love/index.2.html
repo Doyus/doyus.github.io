@@ -1,0 +1,95 @@
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>DYP&ZFR的小世界</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<style>
+		#loveHeart::before {
+			content: '';
+			position: absolute;
+			left: 0; right: 0; top: 0; bottom: 0;
+			background: url(images/7.jpg) no-repeat center / contain;
+			z-index: -1;
+			opacity: 0.1;
+			-moz-box-shadow: inset 0 0 180px #defeec;
+ -webkit-box-shadow: inset 0 0 180px #defeec;
+ box-shadow: inset 0 0 180px #defeec;
+		}
+	</style>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<br />
+				<br />
+				<div class="keyword">2020年最后一天相识。很幸运!</div><br /><br  /><br /><br  /><br />
+				<div class="keyword">2021.02.09幸运的得到你的芳心。我们的故事开始啦。让我们一起去经历未来生活中的点点滴滴。。。</div>
+				
+				
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						我们已经相恋了
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						山无棱,天地合,才敢与君绝<br/>
+						<div class="signature">董宇鹏</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			 <a href='https://doyus.github.io/' target='_blank'>京ICP备16108165号</a> Copyright © 2016  dyp 2021-2021
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2021, 01, 08);
+		together.setHours(10);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
